@@ -1,5 +1,5 @@
 [![Made for Home Assistant](https://img.shields.io/badge/Made%20for-Home%20Assistant-blue?style=for-the-badge&logo=homeassistant)](https://www.home-assistant.io/)
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
+[![marketplace_badge](https://img.shields.io/badge/Marketplace-Custom-orange.svg?style=for-the-badge)](https://contributors.home-assistant.io/marketplace/)
 
 # Baby Buddy Day Card: Home Assistant Baby Buddy dashboard card
 
@@ -28,9 +28,9 @@ direct browser calls to Baby Buddy, so no CORS issues.
 
 ## Installation
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=klaptafel&repository=ha-baby-buddy-day-card&category=plugin)
+[![Open your Home Assistant instance and open a repository inside the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=klaptafel&repository=ha-baby-buddy-day-card&category=plugin)
 
-1. Go to HACS in your Home Assistant.
+1. Go to the Marketplace in your Home Assistant.
 2. Search for "Baby Buddy Day Card" and download it.
 3. Set up the three REST sensors it needs (see below), then add the card to a dashboard.
 
@@ -157,14 +157,14 @@ contains the reference, not the token itself -- useful if you share or version-c
 without wanting to expose your Baby Buddy credentials. `secrets.yaml` already exists by default in a
 standard Home Assistant config folder; just add your own key to it.
 
-If you already use the official [Baby Buddy HACS
+If you already use the official [Baby Buddy Marketplace
 integration](https://github.com/jcgoette/babybuddy_homeassistant), its own timer helper entities
 work directly as `timer_entity` without any extra setup.
 
 ## Removal
 
 Delete the card from the dashboard like any other Lovelace card (three-dot menu on the card, or the
-dashboard editor), then remove it via HACS if you no longer want it installed at all. Your REST
+dashboard editor), then remove it via the Marketplace if you no longer want it installed at all. Your REST
 sensors and Baby Buddy data are unaffected either way.
 
 ## Troubleshooting
